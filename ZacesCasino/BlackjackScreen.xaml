@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="ZacesCasino.BlackjackScreen"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="800">
+    <Grid>
+        <Image x:Name="Card1" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="71" Margin="100,375,0,0"/>
+        <Image x:Name="Card2" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="71" Margin="130,375,0,0"/>
+        <Image x:Name="Card3" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="71" Margin="160,375,0,0"/>
+        <Image x:Name="Card4" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="71" Margin="190,375,0,0"/>
+        <Image x:Name="Card5" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="71" Margin="220,375,0,0"/>
+        <Image x:Name="Card6" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="71" Margin="250,375,0,0"/>
+        <Image x:Name="Card7" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="71" Margin="280,375,0,0"/>
+        <Image x:Name="DCard1" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="71" Margin="100,100,0,0"/>
+        <Image x:Name="DCard2" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="71" Margin="130,100,0,0"/>
+        <Image x:Name="DCard3" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="71" Margin="160,100,0,0"/>
+        <Image x:Name="DCard4" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="71" Margin="190,100,0,0"/>
+        <Image x:Name="DCard5" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="71" Margin="220,100,0,0"/>
+        <Image x:Name="DCard6" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="71" Margin="250,100,0,0"/>
+        <Image x:Name="DCard7" HorizontalAlignment="Left" Height="96" VerticalAlignment="Top" Width="71" Margin="280,100,0,0"/>
+        <Button x:Name="Bet10Button" Content="Bet 10" HorizontalAlignment="Center" Margin="-400,500,0,0" VerticalAlignment="Top" Width="75" Click="Bet10Button_Click"/>
+        <Button x:Name="Bet20Button" Content="Bet 20" HorizontalAlignment="Center" Margin="-200,500,0,0" VerticalAlignment="Top" Width="75" Click="Bet20Button_Click"/>
+        <Button x:Name="Bet30Button" Content="Bet 30" HorizontalAlignment="Center" Margin="0,500,0,0" VerticalAlignment="Top" Width="75" Click="Bet30Button_Click"/>
+        <Button x:Name="Bet40Button" Content="Bet 40" HorizontalAlignment="Center" Margin="200,500,0,0" VerticalAlignment="Top" Width="75" Click="Bet40Button_Click"/>
+        <Button x:Name="Bet50Button" Content="Bet 50" HorizontalAlignment="Center" Margin="400,500,0,0" VerticalAlignment="Top" Width="75" Click="Bet50Button_Click"/>
+        <Button x:Name="HitButton" Content="Hit" HorizontalAlignment="Center" Margin="-200,320,0,0" VerticalAlignment="Top" Width="75" Click="HitButton_Click"/>
+        <Button x:Name="StandButton" Content="Stand" HorizontalAlignment="Center" Margin="0,320,0,0" VerticalAlignment="Top" Width="75" Click="StandButton_Click"/>
+        <Button x:Name="DoubleButton" Content="Double" HorizontalAlignment="Center" Margin="200,320,0,0" VerticalAlignment="Top" Width="75" Click="DoubleButton_Click"/>
+        <Label x:Name="HandTotal" Content="" HorizontalAlignment="Left" Margin="500,402,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="DealerHandTotal" Content="" HorizontalAlignment="Left" Margin="500,100,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Result" Content="" HorizontalAlignment="Center" Margin="0,550,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="BackButton" Content="Back" HorizontalAlignment="Left" Margin="715,568,0,0" VerticalAlignment="Top" Width="75" Click="BackButton_Click"/>
+        <Label x:Name="ChipsDisplay" Content="Chips:" HorizontalAlignment="Left" Margin="10,564,0,0" VerticalAlignment="Top" Width="150"/>
+
+    </Grid>
+</UserControl>
