@@ -1,5 +1,5 @@
 # ZacesCasino
-Mini casino game I'm working on in C#/WPF
+Mini casino game I'm working on in C#/WPF. As of now I have no major plans to upgrade this, and instead will focus on other projects. In the future I hope to port it to mobile.
 
 All games are working and playable, and no major bugs present themselves. However, there are a few features still missing:
 
