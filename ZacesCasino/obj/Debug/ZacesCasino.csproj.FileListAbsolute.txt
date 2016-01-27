@@ -23,3 +23,5 @@ D:\ZacesCasino\ZacesCasino\obj\Debug\BlackjackScreen.baml
 D:\ZacesCasino\ZacesCasino\obj\Debug\BlackjackScreen.g.cs
 D:\ZacesCasino\ZacesCasino\obj\Debug\VideoPokerScreen.baml
 D:\ZacesCasino\ZacesCasino\obj\Debug\VideoPokerScreen.g.cs
+D:\ZacesCasino\ZacesCasino\obj\Debug\RouletteScreen.baml
+D:\ZacesCasino\ZacesCasino\obj\Debug\RouletteScreen.g.cs

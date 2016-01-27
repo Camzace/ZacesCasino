@@ -34,6 +34,7 @@ namespace ZacesCasino
                 case 1: ContentHolder.Content = new BlackjackScreen(p); break;
                 case 2: ContentHolder.Content = new SlotsScreen(p); break;
                 case 3: ContentHolder.Content = new VideoPokerScreen(p); break;
+                case 4: ContentHolder.Content = new RouletteScreen(p); break;
             }
 
         }

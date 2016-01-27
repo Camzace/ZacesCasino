@@ -24,6 +24,6 @@
         <Image x:Name="Card5" HorizontalAlignment="Center" Height="96" VerticalAlignment="Top" Width="71" Margin="400,200,0,0"/>
         <Button x:Name="BackButton" Content="Back" HorizontalAlignment="Left" Margin="715,568,0,0" VerticalAlignment="Top" Width="75" Click="BackButton_Click"/>
         <Label x:Name="ChipsDisplay" Content="Chips:" HorizontalAlignment="Left" Margin="10,564,0,0" VerticalAlignment="Top" Width="150"/>
-        <Label x:Name="WinningsDisplay" Content="" HorizontalAlignment="Center" Margin="0,550,0,0" VerticalAlignment="Top" Width="150"/>
+        <Label x:Name="WinningsDisplay" Content="" HorizontalAlignment="Center" Margin="0,550,0,0" VerticalAlignment="Top" Width="300"/>
     </Grid>
 </UserControl>

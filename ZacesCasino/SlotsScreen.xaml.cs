@@ -56,6 +56,7 @@ namespace ZacesCasino
             waitImage = new BitmapImage(new Uri("pack://application:,,,/img/Wait.bmp"));
             rng = new Random();
             SetInitialImages();
+            SetButtonsActive(true);
         }
 
         public void SetInitialImages()
@@ -118,7 +119,6 @@ namespace ZacesCasino
                 SetWinningsDisplay(winnings);
                 DrawWinCombos(spin.CheckWinningCombinations(lines), spin.CheckNumberOfWinningLines(lines));
                 SetButtonsActive(true);
-                UpdateButtons();
             }
         }
 
@@ -202,14 +202,20 @@ namespace ZacesCasino
             Spin(25);
         }
 
-        private void SetButtonsActive(bool active)
+        private void SetButtonsActive(bool enabled)
         {
-            Spin1Button.IsEnabled = active;
-            Spin5Button.IsEnabled = active;
-            Spin10Button.IsEnabled = active;
-            Spin20Button.IsEnabled = active;
-            Spin25Button.IsEnabled = active;
-            BackButton.IsEnabled = active;
+            int chips = player.GetChips();
+            if (chips >= 1) Spin1Button.IsEnabled = enabled;
+            else Spin1Button.IsEnabled = false;
+            if (chips >= 5) Spin5Button.IsEnabled = enabled;
+            else Spin5Button.IsEnabled = false;
+            if (chips >= 10) Spin10Button.IsEnabled = enabled;
+            else Spin10Button.IsEnabled = false;
+            if (chips >= 20) Spin20Button.IsEnabled = enabled;
+            else Spin20Button.IsEnabled = false;
+            if (chips >= 25) Spin25Button.IsEnabled = enabled;
+            else Spin25Button.IsEnabled = false;
+            BackButton.IsEnabled = enabled;
         }
 
         private void UpdateButtons()

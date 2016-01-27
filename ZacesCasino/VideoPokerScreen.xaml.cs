@@ -32,6 +32,7 @@ namespace ZacesCasino
             InitializeComponent();
             player = p;
             PlayButtonsEnabled(false);
+            BetButtonsEnabled(true);
             UpdateChips();
             
         }
@@ -85,6 +86,7 @@ namespace ZacesCasino
             UpdateChips();
             BackButton.IsEnabled = true;
             BetButtonsEnabled(true);
+            PlayButtonsEnabled(false);
         }
 
         public void SortHand()
@@ -172,11 +174,17 @@ namespace ZacesCasino
 
         public void BetButtonsEnabled(bool enabled)
         {
-            Bet10Button.IsEnabled = enabled;
-            Bet20Button.IsEnabled = enabled;
-            Bet30Button.IsEnabled = enabled;
-            Bet40Button.IsEnabled = enabled;
-            Bet50Button.IsEnabled = enabled;
+            int chips = player.GetChips();
+            if (chips >= 10) Bet10Button.IsEnabled = enabled;
+            else Bet10Button.IsEnabled = false;
+            if (chips >= 20) Bet20Button.IsEnabled = enabled;
+            else Bet20Button.IsEnabled = false;
+            if (chips >= 30) Bet30Button.IsEnabled = enabled;
+            else Bet30Button.IsEnabled = false;
+            if (chips >= 40) Bet40Button.IsEnabled = enabled;
+            else Bet40Button.IsEnabled = false;
+            if (chips >= 50) Bet50Button.IsEnabled = enabled;
+            else Bet50Button.IsEnabled = false;
         }
 
         public void PlayButtonsEnabled(bool enabled)

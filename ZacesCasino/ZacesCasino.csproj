@@ -62,6 +62,9 @@
     <Compile Include="GamePicker.xaml.cs">
       <DependentUpon>GamePicker.xaml</DependentUpon>
     </Compile>
+    <Compile Include="RouletteScreen.xaml.cs">
+      <DependentUpon>RouletteScreen.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SelectionScreen.xaml.cs">
       <DependentUpon>SelectionScreen.xaml</DependentUpon>
     </Compile>
@@ -93,6 +96,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="RouletteScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SelectionScreen.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -212,6 +219,10 @@
     <Resource Include="img\cards\8.png" />
     <Resource Include="img\cards\9.png" />
     <Resource Include="img\cards\cardback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\roulettetable.png" />
+    <Resource Include="img\roulettewheel.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

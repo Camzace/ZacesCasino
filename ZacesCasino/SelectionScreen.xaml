@@ -7,9 +7,9 @@
              d:DesignHeight="600" d:DesignWidth="800">
     <Grid>
         <Label Content="Welcome to Zace's Casino!" HorizontalAlignment="Center" Margin="0,70,0,0" VerticalAlignment="Top"/>
-        <Label Content="Please enter your name:" HorizontalAlignment="Left" Margin="49,324,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="NameTextbox" HorizontalAlignment="Left" Height="23" Margin="206,324,0,0" TextWrapping="Wrap" Text="Player" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="StartButton" Content="Start" HorizontalAlignment="Left" Margin="367,324,0,0" VerticalAlignment="Top" Width="75" Click="StartButton_Click"/>
+        <Label Content="Please enter your name:" HorizontalAlignment="Center" Margin="-300,324,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="NameTextbox" HorizontalAlignment="Center" Height="23" Margin="0,324,0,0" TextWrapping="Wrap" Text="Player" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="StartButton" Content="Start" HorizontalAlignment="Center" Margin="300,324,0,0" VerticalAlignment="Top" Width="75" Click="StartButton_Click"/>
         
 
     </Grid>

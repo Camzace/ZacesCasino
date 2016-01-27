@@ -49,7 +49,8 @@ namespace ZacesCasino
 
         private void RouletteButton_Click(object sender, RoutedEventArgs e)
         {
-            RouletteButton.Content = "Unavailable";
+            MainWindow window = (MainWindow)Window.GetWindow(this);
+            window.SetContent(player, 4); 
         }
 
         private void ReloadButton_Click(object sender, RoutedEventArgs e)
